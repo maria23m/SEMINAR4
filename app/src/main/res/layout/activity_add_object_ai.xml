@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F9"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adăugare Automobil (Design AI)"
+            android:textColor="#1E293B"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Identificare"
+                    android:textColor="#2563EB"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marcă Automobil"
+                    android:textColor="#64748B"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/etMarcaAi"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Ex: Audi"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="An Fabricație"
+                    android:textColor="#64748B"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/etAnFabricatieAi"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Ex: 2023"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Specificații &amp; Stare"
+                    android:textColor="#2563EB"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp" />
+
+                <CheckBox
+                    android:id="@+id/cbEsteNouAi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehiculul este nou"
+                    android:textColor="#334155" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tip Combustibil"
+                    android:textColor="#64748B"
+                    android:textSize="12sp"
+                    android:layout_marginTop="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgCombustibilAi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rbBenzinaAi"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Benzină"
+                        android:checked="true" />
+                    <RadioButton
+                        android:id="@+id/rbMotorinaAi"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Motorină" />
+                    <RadioButton
+                        android:id="@+id/rbElectricAi"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Electric" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categorie Caroserie"
+                    android:textColor="#64748B"
+                    android:textSize="12sp"
+                    android:layout_marginTop="12dp" />
+
+                <Spinner
+                    android:id="@+id/spCategorieAi"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rating Stare Tehnica"
+                    android:textColor="#64748B"
+                    android:textSize="12sp"
+                    android:layout_marginTop="12dp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarAi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5" />
+
+                <Switch
+                    android:id="@+id/swInmatriculatAi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Este înmatriculat"
+                    android:textColor="#334155"
+                    android:layout_marginTop="12dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSalveazaAi"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Salvează Obiect (AI)"
+            android:backgroundTint="#2563EB"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>

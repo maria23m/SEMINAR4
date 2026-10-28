@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formular Adăugare Automobil"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marcă Automobil:" />
+        <EditText
+            android:id="@+id/etMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: Audi"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="An Fabricație:"
+            android:layout_marginTop="8dp" />
+        <EditText
+            android:id="@+id/etAnFabricatie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 2022"
+            android:inputType="number" />
+
+        <CheckBox
+            android:id="@+id/cbEsteNou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehiculul este nou"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tip Combustibil:"
+            android:layout_marginTop="8dp" />
+        <RadioGroup
+            android:id="@+id/rgCombustibil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbBenzina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Benzină"
+                android:checked="true" />
+            <RadioButton
+                android:id="@+id/rbMotorina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motorină" />
+            <RadioButton
+                android:id="@+id/rbElectric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electric" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categorie Caroserie:"
+            android:layout_marginTop="8dp" />
+        <Spinner
+            android:id="@+id/spCategorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evaluare Stare Tehnica:"
+            android:layout_marginTop="8dp" />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <Switch
+            android:id="@+id/swInmatriculat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Este înmatriculat"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnSalveaza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvează Obiect"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
